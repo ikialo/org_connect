@@ -21,6 +21,7 @@ class _HomeBodyState extends State<HomeBody> {
       crossAxisCount: 2,
       children: List.generate(6, (index) {
         return GestureDetector(
+
             onTap: () {
               bloc.addToCart(index);
             },

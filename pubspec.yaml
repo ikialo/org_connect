@@ -24,12 +24,18 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   provider: ^3.0.0
+  firebase_auth: ^0.16.1
+  shared_preferences: ^0.5.7+3
+  splashscreen: ^1.2.0
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
+  flutter_driver:
+    sdk: flutter
+  test: any
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

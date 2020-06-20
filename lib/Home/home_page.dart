@@ -39,6 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: new Stack(
                     children: <Widget>[
                       new IconButton(
+
                         icon: new Icon(
                           Icons.shopping_cart,
                           color: Colors.white,
@@ -60,6 +61,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                           color: Colors.white,
                                           fontSize: 12.0,
                                           fontWeight: FontWeight.w500),
+                                      key: Key("count"),
+
                                     ),
                                   )),
                             ],

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:orgconnect/Home/home_page.dart';
+import 'package:orgconnect/Login/SplashScreen.dart';
 import 'package:orgconnect/ProviderClass/provider_class.dart';
 
 import 'package:provider/provider.dart';
+import 'package:splashscreen/splashscreen.dart';
 
 import 'Cart/cart_page.dart';
 
@@ -35,6 +37,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-      return HomeScreen();
+      return SplashScreenOrg();
   }
 }

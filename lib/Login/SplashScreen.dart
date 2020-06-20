@@ -6,7 +6,7 @@ import 'package:orgconnect/Home/home_page.dart';
 import 'package:orgconnect/Login/SignIn.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:splashscreen/splashscreen.dart';
-
+import 'package:orgconnect/Util.dart';
 // the splash screen will run to see if person is signed in or not and more to appropriate page
 
 class SplashScreenOrg extends StatefulWidget {
@@ -75,7 +75,7 @@ class _SplashScreenState extends State<SplashScreenOrg> {
             navigateAfterSeconds: isLoggedIn ? HomeScreen() : SignIn(),
 //        title: new Text('Connecting you to \nLocal \nOrganic Produce', style: TextStyle(color:Color.fromRGBO(128, 66, 0, 1.0), fontSize: 20 ,),),
 //        image: new Image.asset('assets/1.jpg'),
-            backgroundColor: Color.fromRGBO(255, 217, 179, 1.0),
+            backgroundColor: Utilities().lighBrown,
             styleTextUnderTheLoader: new TextStyle(),
             photoSize: 100.0,
             loaderColor: Color.fromRGBO(128, 66, 0, 1.0)),

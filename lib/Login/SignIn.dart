@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:orgconnect/Login/email_signin.dart';
+import 'package:orgconnect/Login/phone_signin.dart';
 import 'package:orgconnect/Util.dart';
 
 
@@ -19,9 +21,12 @@ class _SignInState extends State<SignIn> {
           child:  Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              CircleAvatar(
-                backgroundColor: Colors.white,
-                radius: 50,
+              Hero(
+                tag:"icon",
+                child: CircleAvatar(
+                  backgroundColor: Colors.red,
+                  radius: 50,
+                ),
               ),
               SizedBox(
                 height: 50,
@@ -36,6 +41,9 @@ class _SignInState extends State<SignIn> {
                   minWidth: 200,
                   padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
                   onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (_) {
+                      return PhoneSignIn();
+                    }));
                   },
                   child: Text("PHONE",
                       textAlign: TextAlign.center,
